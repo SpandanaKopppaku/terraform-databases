@@ -1,3 +1,7 @@
 docdb:
     source: "https://github.com/SpandanaKopppaku/tf-module-docdb.git"
     version: "main" 
+
+redis:
+    source: "https://github.com/SpandanaKopppaku/tf-module-redis.git"
+    version: "main" 
