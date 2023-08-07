@@ -10,6 +10,10 @@ DOCDB_PORT_NUMBER      = var.DOCDB_PORT_NUMBER
 module "redis" {
 source                 = "./vendor/modules/redis" 
 ENV                    = var.ENV
+REDIS_PORT_NUMBER      = var.REDIS_PORT_NUMBER
+REDIS_INSTANCE_TYPE    = var.REDIS_INSTANCE_TYPE
+REDIS_INSTANCE_COUNT   = var.REDIS_INSTANCE_COUNT
+REDIS_ENGINE_VERSION   = var.REDIS_ENGINE_VERSION
 }
 
 module "mysql" {
@@ -25,4 +29,7 @@ MYSQL_INSTANCE_TYPE    = var.MYSQL_INSTANCE_TYPE
 module "rabbitmq" {
 source                 = "./vendor/modules/rabbitmq" 
 ENV                    = var.ENV
+RABBITMQ_PORT_NUMBER    = 5672
+RABBITMQ_INSTANCE_TYPE  = "t3.micro"
+RABBITMQ_INSTANCE_COUNT = 1
 }
