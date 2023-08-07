@@ -29,7 +29,7 @@ MYSQL_INSTANCE_TYPE    = var.MYSQL_INSTANCE_TYPE
 module "rabbitmq" {
 source                 = "./vendor/modules/rabbitmq" 
 ENV                    = var.ENV
-RABBITMQ_PORT_NUMBER    = 5672
-RABBITMQ_INSTANCE_TYPE  = "t3.micro"
-RABBITMQ_INSTANCE_COUNT = 1
+RABBITMQ_PORT_NUMBER   = var.RABBITMQ_PORT_NUMBER
+RABBITMQ_INSTANCE_TYPE = var.RABBITMQ_INSTANCE_TYPE
+
 }

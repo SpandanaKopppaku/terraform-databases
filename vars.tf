@@ -16,7 +16,11 @@ variable "DOCDB_PORT_NUMBER" {}
 variable "REDIS_PORT_NUMBER" {}  
 variable "REDIS_INSTANCE_TYPE" {}
 variable "REDIS_INSTANCE_COUNT" {} 
-variable "REDIS_ENGINE_VERSION" {}      
+variable "REDIS_ENGINE_VERSION" {} 
+
+#RABBITMQ Variables
+variable "RABBITMQ_PORT_NUMBER" {}    
+variable "RABBITMQ_INSTANCE_TYPE" {}  
 
 
   

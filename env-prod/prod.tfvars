@@ -11,11 +11,12 @@ MYSQL_INSTANCE_TYPE     = "db.t2.micro"
 # docdb Variables
 DOCDB_PORT_NUMBER       = 27017
 DOCDB_INSTANCE_TYPE     = "db.t3.medium"
-DOCDB_INSTANCE_COUNT    = 10
+DOCDB_INSTANCE_COUNT    = 2
 
+# RabbitMQ Variables
 RABBITMQ_PORT_NUMBER    = 5672
 RABBITMQ_INSTANCE_TYPE  = "t3.micro"
-RABBITMQ_INSTANCE_COUNT = 10
+
 
 
 #REDIS Variable
